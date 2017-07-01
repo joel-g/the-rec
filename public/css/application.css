@@ -1,10 +1,13 @@
 .nav{
     border:1px solid #ccc;
+    background-color: #cc3300;
     border-width:1px 0;
     list-style:none;
-    margin:0;
     padding:0;
     text-align:center;
+    margin-top: 40px;
+    font-family: helvetica;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 .nav li{
     font-size: 1.5em;
@@ -13,4 +16,18 @@
 .nav a{
     display:inline-block;
     padding:10px;
+}
+
+.nav-link {
+  transition: 0.4s;
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.nav-link:hover {
+  background-color: #ffffff;
+  color: #cc3300;
+  padding: 24px 10px;
 }
