@@ -4,7 +4,7 @@
     border-width:1px 0;
     list-style:none;
     padding:0;
-    text-align:center;
+    text-align: center;
     margin-top: 40px;
     font-family: helvetica;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -42,13 +42,37 @@
   position: relative;
   right: 100px;
   padding: 25px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);
 }
 
-.artist-name {
+.entry-name {
 	width: 250px;
 	height: 100px;
-	-webkit-transform: skew(20deg);
-	   -moz-transform: skew(20deg);
-	     -o-transform: skew(20deg);
+  -ms-transform: skew(-20deg,0deg);
+    -webkit-transform: skew(-20deg,0deg);
+      transform: skew(-20deg,0deg);
 	background: #cc3300;
+}
+
+.entry-box {
+  border: solid 1px #000000;
+  width: 75%;
+  margin: auto;
+}
+
+.entry-text {
+  border: solid 1px #000000;
+}
+
+.entry-image {
+  border: solid 1px #000000;
+}
+
+
+
+
+#master-container {
+  text-align: center;
 }

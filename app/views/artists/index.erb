@@ -1,11 +1,20 @@
+
+
+<div id="master-container">
+
+
 HELLO THIS IS THE ARTISTS PAGE
 
+
 <% @artists.each do |artist| %>
-<div class="artist-box">
-<span class="artist-name"><%= artist.name %></span>
-<p class="artist-about"><%= artist.about %></p>
+<div class="entry-box">
+<span class="entry-name"><%= artist.name %></span>
+<p class="entry-text"><%= artist.about %></p>
 <% if artist.img_url != nil %>
-<img class="artist-img" src="<%= artist.img_url %>">
+<img class="entry-img" src="<%= artist.img_url %>">
 <% end %>
 </div>
 <% end %>
+
+
+</div>

@@ -5,7 +5,7 @@ class CreateEvents < ActiveRecord::Migration
       t.text :description
       t.date :date, null: false
       t.string :location, null: false
-      t.timestamps, null: false
+      t.timestamps
     end
   end
 end
