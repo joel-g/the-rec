@@ -1,1 +1,11 @@
-HELLO THIS IS THE ARTSITS PAGE
+HELLO THIS IS THE ARTISTS PAGE
+
+<% @artists.each do |artist| %>
+<div class="artist-box">
+<span class="artist-name"><%= artist.name %></span>
+<p class="artist-about"><%= artist.about %></p>
+<% if artist.img_url != nil %>
+<img class="artist-img" src="<%= artist.img_url %>">
+<% end %>
+</div>
+<% end %>

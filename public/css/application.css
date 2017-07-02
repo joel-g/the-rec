@@ -44,12 +44,11 @@
   padding: 25px;
 }
 
-/*body {
-  background-color: #cc3300;
+.artist-name {
+	width: 250px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: #cc3300;
 }
-
-#master-container {
-  width: 80%;
-  margin: auto;
-  background-color: #ffffff;
-}*/
