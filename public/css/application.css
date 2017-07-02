@@ -26,8 +26,20 @@
   padding: 0 10px;
   margin: 0 10px;
 }
+
 .nav-link:hover {
   background-color: #ffffff;
   color: #cc3300;
   padding: 24px 10px;
+}
+
+#logo {
+  border-radius: 15px;
+  font-weight: bold;
+  font-family: arial;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  background-color: #ccc;
+  position: relative;
+  right: 100px;
+  padding: 25px;
 }
