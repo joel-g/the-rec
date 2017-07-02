@@ -1,0 +1,3 @@
+get '/artists' do
+  
+end
