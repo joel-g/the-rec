@@ -1,12 +1,11 @@
 require 'bcrypt'
 
 class User < ActiveRecord::Base
-  has_many :channels, :through => :subscriptions
-  has_many :subscriptions
+  has_many :entries
+  has_many :events
+  has_many :artists
 
-  validates :email, presence: true, uniqueness: true
-  validates :first_name, presence: true
-  validates :last_name, presence: true
+  validates :username, presence: true, uniqueness: true
   validates :hashed_password, presence: true
 
   def password
