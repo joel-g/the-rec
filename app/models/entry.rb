@@ -1,3 +1,3 @@
 class Entry < ActiveRecord::Base
-  # Remember to create a migration!
+  validates :title, presence: true, uniquenesss: true
 end
