@@ -1,0 +1,14 @@
+<div class="entry-container"
+<% if session[:id] %>
+  You are currently logged in as: <%= user.find(session[:id]).username %>
+  <form method="post" action="/users/logout">
+  <input type="submit" value="logout" />
+  </form>
+<% else %>
+  <form method="POST" action="/users/login">
+  <input type="text" name="username" placeholder="Username"/>
+  <input type="password" name="password" placeholder="Password" />
+  <input type="submit" value="Login" />
+  </form>
+<% end %>
+</div>
