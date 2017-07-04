@@ -1,11 +1,16 @@
-<div class="entry-container"
+<div class="entry-container">
+<% if defined?(@error) %>
+    <%= @error %>
+<% end %>
+<% if defined?(@user) %>
+  You are currently logged in as: <%= @user.username %>
+<% end %>
 <% if session[:id] %>
-  You are currently logged in as: <%= user.find(session[:id]).username %>
-  <form method="post" action="/users/logout">
+  <form method="post" action="/logout">
   <input type="submit" value="logout" />
   </form>
 <% else %>
-  <form method="POST" action="/users/login">
+  <form method="POST" action="/login">
   <input type="text" name="username" placeholder="Username"/>
   <input type="password" name="password" placeholder="Password" />
   <input type="submit" value="Login" />
